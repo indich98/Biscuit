@@ -1,0 +1,43 @@
+body{
+font-family: 'Raleway', sans-serif;
+background-color: #a4c3b2;
+text-align: left;
+}
+.container-fluid{
+  margin:auto;
+
+  padding:2%;
+
+}
+.nav-item .nav-link{
+  color:red;
+}
+div{
+  background-color: white;
+}
+.blog-post{
+  padding:3%
+
+}
+.blog-link{
+  color:#537a5a;
+  font-weight: bold;
+}
+.blog-link:hover{
+  text-decoration: none;
+  color: #a4c3b2
+}
+.submit-button{
+  margin-bottom: 5%
+}
+.main-div{
+  margin-bottom:5%;
+    margin-top:5%;
+}
+.btn:hover{
+  background-color:#537a5a;
+}
+.category-img{
+  height: 200px;
+  width: 200px;
+}
