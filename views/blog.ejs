@@ -5,18 +5,14 @@
   <!-- <h1>Biscuit Vintage Journal</h1>
   <h5>Musings off all things vintage</h5> -->
   <div class="row">
-    <%- include("partials/blogPost") -%>
-    <%- include("partials/blogPost") -%>
-    <%- include("partials/blogPost") -%>
-    <%- include("partials/blogPost") -%>
-    <%- include("partials/blogPost") -%>
-    <%- include("partials/blogPost") -%>
-    <%- include("partials/blogPost") -%>
-    <%- include("partials/blogPost") -%>
-    <%- include("partials/blogPost") -%>
 
-  </div>
+
+    <%blogs.forEach(function(blog){%>
+      <div class="col-lg-4 col-md-6 blog-post post">
+        <h3 ><a class="blog-link" href="/blogs/<%=blog._id%>"> <%= blog.title %> </a></h3>
+        <p> <%= blog.content.substring(0,200) + "..." %> </p>
+      </div>
+    <% }) %>
 </div>
-
 </div>
 <%- include("partials/footer") -%>

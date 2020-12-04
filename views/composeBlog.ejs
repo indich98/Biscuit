@@ -4,16 +4,16 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-        <form>
+        <form action="/compose" method="post">
           <div class="form-group">
             <label for="TitlesInput">Post Title</label>
-            <input type="text" class="form-control" id="TitleInput">
+            <input type="text" class="form-control" name="blogTitle" id="TitleInput">
           </div>
           <div class="form-group">
             <label for="ContentInput">Post Content</label>
-            <textarea class="form-control" id="ContentInput" rows="3"></textarea>
+            <textarea class="form-control" id="ContentInput" name="blogContent" rows="3"></textarea>
           </div>
-          <button type="button" class="btn btn-outline-dark submit-button">Post</button>
+          <button type="submit" class="btn btn-outline-dark submit-button" name="publishButton">Post</button>
         </form>
       </div>
 
